@@ -1,29 +1,20 @@
-// import Image from 'next/image'
-
 export default function Intro() {
   return (
-    <div className=" bg-gray-100 p-8 flex flex-col items-center justify-start">
-      <div >
-        {/* <Image
-          src="/placeholder.svg?height=192&width=192"
-          alt="Your Name"
-          layout="fill"
-          objectFit="cover"
-        /> */}
+    <div className="bg-gray-100 p-8 flex items-center justify-center">
+      {/* Left Section: Image */}
+      <div className="mr-8">
+        <img src="/circle_headshot.png" alt="Min Kim" className="h-80 w-80 rounded-full" />
       </div>
-      <p className="text-center text-lg">
-        Hi! I'm
-      </p>
-      <div className="text-7xl">
-        Min Kim
-      </div>
-      <p className="text-center text-lg">
-        Mechanical Engineering @ University of Southern California
-      </p>
-      <p className="text-center text-lg">
-        Los Angeles
-      </p>
-    </div>
-  )
-}
 
+      {/* Right Section: Text */}
+      <div className="flex flex-col">
+        <p className="text-4xl mb-4">Hey! I'm Min, an engineer.</p>
+        <p className="text-lg ">
+          🛠️ Mechanical Engineering Student
+        </p>
+        <p className="text-lg"> ☀️ University of Southern California</p>
+        <p className="text-lg">📍 Los Angeles, CA</p>
+      </div>
+    </div>
+  );
+}

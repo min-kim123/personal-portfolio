@@ -1,9 +1,11 @@
-export default function ProjectCard({ title, description }) {
+export default function ProjectCard({ title, description, link }) {
   return (
-    <div className="bg-white shadow-md rounded-lg p-6 mb-6">
+    <a
+      href={link}
+      className=" p-6 mb-6 block border rounded-lg shadow-md transition bg-white hover:bg-gray-300"
+    >
       <h2 className="text-xl  mb-2">{title}</h2>
       <p className="text-gray-600">{description}</p>
-    </div>
-  )
+    </a>
+  );
 }
-
