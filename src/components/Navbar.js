@@ -3,23 +3,23 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Navbar() {
   return (
-    <nav className="bg-gray-800 p-4">
+    <nav className="bg-gray-50 p-4 rounded-lg mx-4 my-2 shadow-md ">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-white text-xl font-bold">Min Kim</h1>
+        <h1 className=" text-xl font-bold">Min Kim</h1>
         <div className="flex space-x-4">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/min-kim123"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-gray-400"
+            className=" hover:text-gray-400"
           >
             <FaGithub size={24} />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/153minkim/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-gray-400"
+            className="hover:text-blue-800"
           >
             <FaLinkedin size={24} />
           </a>
